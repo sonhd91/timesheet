@@ -8,7 +8,7 @@
             <xpath expr="//page[@name='settings']" position="inside">
                 <group name="rounding">
                     <group string="Time rounding" name="time_rounding_parameters">
-                        <field name="timesheet_rounding_method" />
+                        <field name="timesheet_rounding_method" required="1" />
                         <field
                             name="timesheet_rounding_unit"
                             attrs="{'invisible': [('timesheet_rounding_method', '=', 'NO')]}"

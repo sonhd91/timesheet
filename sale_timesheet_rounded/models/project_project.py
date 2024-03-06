@@ -4,7 +4,6 @@ from odoo import fields, models
 
 
 class ProjectProject(models.Model):
-
     _inherit = "project.project"
 
     timesheet_rounding_unit = fields.Float(
@@ -25,7 +24,6 @@ class ProjectProject(models.Model):
             ("DOWN", "Down"),
         ],
         default="NO",
-        required=True,
         help="If you activate the rounding of timesheet lines, only new "
         "entries will be rounded (i.e. existing lines will not be "
         "rounded automatically).",
